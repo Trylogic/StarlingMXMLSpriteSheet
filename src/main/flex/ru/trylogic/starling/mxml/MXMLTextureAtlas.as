@@ -98,7 +98,6 @@ package ru.trylogic.starling.mxml
 
 		public function set subTextures( value : Vector.<MXMLSubTexture> ) : void
 		{
-			trace(value);
 			var subTexture : MXMLSubTexture;
 			if ( _subTextures )
 			{
