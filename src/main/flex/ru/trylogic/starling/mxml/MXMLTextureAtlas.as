@@ -8,9 +8,9 @@ package ru.trylogic.starling.mxml
 	import starling.textures.Texture;
 
 	[DefaultProperty("subTextures")]
-	public class MXMLTextureAtlas implements IMXMLObject
+	public class MXMLTextureAtlas
 	{
-		public var subTextures : Vector.<MXMLSubTexture> = new Vector.<MXMLSubTexture>();
+		private var _subTextures : Vector.<MXMLSubTexture>;
 
 		public var imageClass : Class;
 
@@ -37,19 +37,6 @@ package ru.trylogic.starling.mxml
 		{
 		}
 
-		public function initialized( document : Object, id : String ) : void
-		{
-			_atlasTexture = Texture.fromBitmap( new imageClass() );
-
-			for each( var subTexture : MXMLSubTexture in subTextures )
-			{
-				var region : Rectangle = new Rectangle( subTexture.x, subTexture.y, subTexture.width, subTexture.height );
-				var frame : Rectangle = subTexture.frameWidth > 0 && subTexture.frameHeight > 0 ? new Rectangle( subTexture.frameX, subTexture.frameY, subTexture.frameWidth, subTexture.frameHeight ) : null;
-
-				addRegion( subTexture.name, region, frame );
-			}
-		}
-
 		public function getTexture( name : String ) : Texture
 		{
 			var region : Rectangle = _textureRegions[name];
@@ -60,7 +47,7 @@ package ru.trylogic.starling.mxml
 			}
 			else
 			{
-				return Texture.fromTexture( _atlasTexture, region, _textureFrames[name] );
+				return Texture.fromTexture( atlasTexture, region, _textureFrames[name] );
 			}
 		}
 
@@ -102,6 +89,34 @@ package ru.trylogic.starling.mxml
 		public function removeRegion( name : String ) : void
 		{
 			delete _textureRegions[name];
+		}
+
+		public function get subTextures() : Vector.<MXMLSubTexture>
+		{
+			return _subTextures;
+		}
+
+		public function set subTextures( value : Vector.<MXMLSubTexture> ) : void
+		{
+			trace(value);
+			var subTexture : MXMLSubTexture;
+			if ( _subTextures )
+			{
+				for each( subTexture in _subTextures )
+				{
+					removeRegion( subTexture.name );
+				}
+			}
+
+			_subTextures = value;
+
+			for each( subTexture in _subTextures )
+			{
+				var region : Rectangle = new Rectangle( subTexture.x, subTexture.y, subTexture.width, subTexture.height );
+				var frame : Rectangle = subTexture.frameWidth > 0 && subTexture.frameHeight > 0 ? new Rectangle( subTexture.frameX, subTexture.frameY, subTexture.frameWidth, subTexture.frameHeight ) : null;
+
+				addRegion( subTexture.name, region, frame );
+			}
 		}
 	}
 }
