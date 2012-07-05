@@ -1,10 +1,37 @@
 StarlingMXMLSpriteSheet
 =======================
 
-JSFL script for Flash CS6 to export Starling sprite sheets into the MXML format
+JSFL script for Flash CS6 to export Starling sprite sheets into the MXML format.
 
 Latest stable archive with binaries is aviable at:
 https://trylogic.ci.cloudbees.com/job/StarlingMXMLSpriteSheet/lastStableBuild/ru.trylogic.starling$mxml-sprite-sheet/artifact/*zip*/archive.zip
+
+Example of generated MXML
+=======================
+
+	<?xml version="1.0" encoding="UTF-8"?>
+    <MXMLTextureAtlas xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="http://www.trylogic.ru/starling/mxml">
+
+        <fx:Script><![CDATA[
+            import starling.textures.Texture;
+        ]]></fx:Script>
+        <imageClass>@Embed("atlas.png")</imageClass>
+
+        <MXMLSubTexture name="symbol0000" x="0" y="391" width="329" height="320"/>
+        <fx:Script><![CDATA[
+            public function get symbol0000() : Texture
+            {
+                return super.getTexture("symbol0000");
+            }
+        ]]></fx:Script>
+        <MXMLSubTexture name="symbol0001" x="0" y="0" width="445" height="391"/>
+        <fx:Script><![CDATA[
+            public function get symbol0001() : Texture
+            {
+                return super.getTexture("symbol0001");
+            }
+        ]]></fx:Script>
+    </MXMLTextureAtlas>
 
 Usage
 =======================
