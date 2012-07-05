@@ -7,7 +7,7 @@
 	<groupId>ru.trylogic.starling</groupId>
 	<artifactId>mxml-sprite-sheet</artifactId>
 	<packaging>swc</packaging>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 
 	<properties>
 		<flexmojos.version>4.2-beta</flexmojos.version>

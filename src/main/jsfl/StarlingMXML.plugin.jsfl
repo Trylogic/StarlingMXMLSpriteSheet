@@ -36,7 +36,7 @@ function frameExport(frame) {
 	s += '"/>\n';
 
 	s += '\t<fx:Script><![CDATA[\n';
-	s += '\t\tpublic function get ' + frame.id + '() : Texture\n';
+	s += '\t\tpublic function get ' + frame.id.replace(/\./g, '_dot_').replace(/\-/g, '_dash_').replace(/\s/g, '_space_') + '() : Texture\n';
 	s += '\t\t{\n';
 	s += '\t\t\treturn super.getTexture("' + frame.id + '");\n';
 	s += '\t\t}\n';

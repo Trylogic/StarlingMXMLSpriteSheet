@@ -24,7 +24,7 @@ Example of generated MXML
                 return super.getTexture("symbol0000");
             }
         ]]></fx:Script>
-     
+
         <MXMLSubTexture name="symbol0001" x="0" y="0" width="445" height="391"/>
         <fx:Script><![CDATA[
             public function get symbol0001() : Texture
