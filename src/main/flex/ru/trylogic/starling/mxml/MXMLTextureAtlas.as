@@ -7,6 +7,7 @@ package ru.trylogic.starling.mxml
 
 	import starling.textures.Texture;
 
+	[DefaultProperty("subTextures")]
 	public class MXMLTextureAtlas implements IMXMLObject
 	{
 		public var subTextures : Vector.<MXMLSubTexture> = new Vector.<MXMLSubTexture>();
