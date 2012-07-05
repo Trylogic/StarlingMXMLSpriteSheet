@@ -33,7 +33,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>src/main/resources/StarlingMXML.plugin.jsfl</file>
+									<file>src/main/jsfl/StarlingMXML.plugin.jsfl</file>
 									<type>jsfl</type>
 								</artifact>
 							</artifacts>
