@@ -14,7 +14,7 @@
 }
 
 function beginExport(meta) {
-	var s = '<?xml version="1.0" encoding="UTF-8"?>\n';
+	var s = '<?xml version="1.0" encoding="UTF-16"?>\n';
 	s += '<MXMLTextureAtlas xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="http://www.trylogic.ru/starling/mxml">\n\n';
 
 
