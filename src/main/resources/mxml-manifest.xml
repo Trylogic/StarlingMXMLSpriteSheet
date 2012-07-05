@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+
+    IoC Components
+
+-->
+<componentPackage>
+
+	<component id="MXMLTextureAtlas" class="ru.trylogic.starling.mxml.MXMLTextureAtlas"/>
+	<component id="MXMLSubTexture" class="ru.trylogic.starling.mxml.MXMLSubTexture"/>
+
+</componentPackage>
