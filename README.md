@@ -9,7 +9,7 @@ https://trylogic.ci.cloudbees.com/job/StarlingMXMLSpriteSheet/lastStableBuild/ru
 Example of generated MXML
 =======================
 
-	<?xml version="1.0" encoding="UTF-8"?>
+	<?xml version="1.0" encoding="UTF-16"?>
     <MXMLTextureAtlas xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="http://www.trylogic.ru/starling/mxml">
 
         <fx:Script><![CDATA[
@@ -24,6 +24,7 @@ Example of generated MXML
                 return super.getTexture("symbol0000");
             }
         ]]></fx:Script>
+     
         <MXMLSubTexture name="symbol0001" x="0" y="0" width="445" height="391"/>
         <fx:Script><![CDATA[
             public function get symbol0001() : Texture
