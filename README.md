@@ -10,29 +10,75 @@ Example of generated MXML
 =======================
 
 	<?xml version="1.0" encoding="UTF-16"?>
-    <MXMLTextureAtlas xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="http://www.trylogic.ru/starling/mxml">
+	<MXMLTextureAtlas xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns="http://www.trylogic.ru/starling/mxml">
 
-        <fx:Script><![CDATA[
-            import starling.textures.Texture;
-        ]]></fx:Script>
-        <imageClass>@Embed("atlas.png")</imageClass>
+	<fx:Script><![CDATA[
+		import starling.textures.Texture;
+	]]></fx:Script>
+	<imageClass>@Embed("atlas.png")</imageClass>
 
-        <MXMLSubTexture name="symbol0000" x="0" y="391" width="329" height="320"/>
-        <fx:Script><![CDATA[
-            public function get symbol0000() : Texture
-            {
-                return super.getTexture("symbol0000");
-            }
-        ]]></fx:Script>
+	<fx:Script><![CDATA[
+		public function get animated_Symbol_space_1() : Vector.<Texture>
+		{
+			return super.getTextures("Symbol 1");
+		}
+	]]></fx:Script>
+	<MXMLSubTexture name="Symbol 10000" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get Symbol_space_10000() : Texture
+		{
+			return super.getTexture("Symbol 10000");
+		}
+	]]></fx:Script>
 
-        <MXMLSubTexture name="symbol0001" x="0" y="0" width="445" height="391"/>
-        <fx:Script><![CDATA[
-            public function get symbol0001() : Texture
-            {
-                return super.getTexture("symbol0001");
-            }
-        ]]></fx:Script>
-    </MXMLTextureAtlas>
+	<MXMLSubTexture name="Symbol 10001" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get Symbol_space_10001() : Texture
+		{
+			return super.getTexture("Symbol 10001");
+		}
+	]]></fx:Script>
+
+	<MXMLSubTexture name="Symbol 10002" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get Symbol_space_10002() : Texture
+		{
+			return super.getTexture("Symbol 10002");
+		}
+	]]></fx:Script>
+
+	<MXMLSubTexture name="Symbol 10003" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get Symbol_space_10003() : Texture
+		{
+			return super.getTexture("Symbol 10003");
+		}
+	]]></fx:Script>
+
+	<MXMLSubTexture name="Symbol 10004" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get Symbol_space_10004() : Texture
+		{
+			return super.getTexture("Symbol 10004");
+		}
+	]]></fx:Script>
+
+	<MXMLSubTexture name="Symbol 20000" x="0" y="0" width="0" height="0" frameX="107374181" frameY="107374181" frameWidth="0" frameHeight="0"/>
+	<fx:Script><![CDATA[
+		public function get animated_Symbol_space_2() : Vector.<Texture>
+		{
+			return super.getTextures("Symbol 2");
+		}
+	]]></fx:Script>
+
+	<fx:Script><![CDATA[
+		public function get Symbol_space_20000() : Texture
+		{
+			return super.getTexture("Symbol 20000");
+		}
+	]]></fx:Script>
+
+</MXMLTextureAtlas>
 
 Usage
 =======================
