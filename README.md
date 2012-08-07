@@ -16,37 +16,37 @@ Example of generated MXML
 			private static const atlasTexture : Texture = Texture.fromBitmap(new ATLAS_IMAGE_CLASS());
 
 
-			protected const Symbol_space_10000_region : Rectangle = new Rectangle(0,279,286,394);
-			protected const Symbol_space_10000_frame : Rectangle = new Rectangle(-75,-43,413,437);
-			public function get Symbol_space_10000() : Texture
+			protected static const Symbol_space_10000_region : Rectangle = new Rectangle(0,279,286,394);
+			protected static const Symbol_space_10000_frame : Rectangle = new Rectangle(-75,-43,413,437);
+			public static function get Symbol_space_10000() : Texture
 			{
 				return Texture.fromTexture( atlasTexture, Symbol_space_10000_region, Symbol_space_10000_frame );
 			}
 
-			protected const Symbol_space_10001_region : Rectangle = new Rectangle(286,279,188,244);
-			protected const Symbol_space_10001_frame : Rectangle = new Rectangle(-125,-4,413,437);
-			public function get Symbol_space_10001() : Texture
+			protected static const Symbol_space_10001_region : Rectangle = new Rectangle(286,279,188,244);
+			protected static const Symbol_space_10001_frame : Rectangle = new Rectangle(-125,-4,413,437);
+			public static function get Symbol_space_10001() : Texture
 			{
 				return Texture.fromTexture( atlasTexture, Symbol_space_10001_region, Symbol_space_10001_frame );
 			}
 
-			protected const Symbol_space_10002_region : Rectangle = new Rectangle(0,0,413,279);
-			protected const Symbol_space_10002_frame : Rectangle = new Rectangle(0,0,413,437);
-			public function get Symbol_space_10002() : Texture
+			protected static const Symbol_space_10002_region : Rectangle = new Rectangle(0,0,413,279);
+			protected static const Symbol_space_10002_frame : Rectangle = new Rectangle(0,0,413,437);
+			public static function get Symbol_space_10002() : Texture
 			{
 				return Texture.fromTexture( atlasTexture, Symbol_space_10002_region, Symbol_space_10002_frame );
 			}
 
-			protected const Symbol_space_20000_region : Rectangle = new Rectangle(0,673,261,175);
-			protected const Symbol_space_20000_frame : Rectangle = null;
-			public function get Symbol_space_20000() : Texture
+			protected static const Symbol_space_20000_region : Rectangle = new Rectangle(0,673,261,175);
+			protected static const Symbol_space_20000_frame : Rectangle = null;
+			public static function get Symbol_space_20000() : Texture
 			{
 				return Texture.fromTexture( atlasTexture, Symbol_space_20000_region, Symbol_space_20000_frame );
 			}
 
-			protected const Symbol_space_30000_region : Rectangle = new Rectangle(0,0,0,0);
-			protected const Symbol_space_30000_frame : Rectangle = null;
-			public function get Symbol_space_30000() : Texture
+			protected static const Symbol_space_30000_region : Rectangle = new Rectangle(0,0,0,0);
+			protected static const Symbol_space_30000_frame : Rectangle = null;
+			public static function get Symbol_space_30000() : Texture
 			{
 				return Texture.fromTexture( atlasTexture, Symbol_space_30000_region, Symbol_space_30000_frame );
 			}
