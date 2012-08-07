@@ -44,13 +44,6 @@ Example of generated MXML
 				return Texture.fromTexture( atlasTexture, Symbol_space_20000_region, Symbol_space_20000_frame );
 			}
 
-			protected static const Symbol_space_30000_region : Rectangle = new Rectangle(0,0,0,0);
-			protected static const Symbol_space_30000_frame : Rectangle = null;
-			public static function get Symbol_space_30000() : Texture
-			{
-				return Texture.fromTexture( atlasTexture, Symbol_space_30000_region, Symbol_space_30000_frame );
-			}
-
 		]]></fx:Script>
 	</fx:Object>
 
